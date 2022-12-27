@@ -17,7 +17,7 @@ class MainActivity : AppCompatActivity() {
         //customLoader.show()
 
         //Custom loader only with lottie animation
-        //customLoader.show(Data( lottieAnimation = com.dalvik.customloader.R.raw.progress_default))
+        customLoader.show(Data( lottieAnimation = com.dalvik.customloader.R.raw.progress_default))
 
         //Custom loader change color progress default
         //customLoader.show(Data(progressColor = android.R.color.holo_blue_bright))

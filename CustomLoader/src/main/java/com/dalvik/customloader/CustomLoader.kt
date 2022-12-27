@@ -43,9 +43,10 @@ class CustomLoader(context: Context, attributeSet: AttributeSet?) : View(context
                 )
         }
 
-        data.lottieAnimation?.let {
+        data.lottieAnimation?.let {lottieAnimation ->
             binding.progressBar.visibility = GONE
             binding.lottieAnimationView.visibility = VISIBLE
+            binding.lottieAnimationView.setAnimation(lottieAnimation)
         }
 
 
