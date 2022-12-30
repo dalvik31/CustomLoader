@@ -57,7 +57,7 @@ class CustomLoader(context: Context, attributeSet: AttributeSet?) : View(context
     fun hide() {
         try {
             val root = getActivity()?.findViewById<FrameLayout>(android.R.id.content)
-            val view = root?.findViewById<ConstraintLayout>(R.id.loader_container)
+            val view = root?.findViewById<FrameLayout>(R.id.loader_container)
             view?.let {
                 val popOut: Animation =
                     android.view.animation.AnimationUtils.loadAnimation(
